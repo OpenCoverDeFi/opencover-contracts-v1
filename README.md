@@ -1,6 +1,6 @@
 <img src="data/nft-preview/quote-cover-active.svg" width="250" alt="Active OpenCover quote" />
 
-<h1>OpenCover Contracts &nbsp;&nbsp;<img src="https://img.shields.io/badge/Version-v1-blue" alt="Version" /></h1>
+<h1>OpenCover Contracts &nbsp;&nbsp;<img src="https://img.shields.io/badge/Version-v1.5-blue" alt="Version" /></h1>
 
 OpenCover's smart contracts to make Nexus Mutual covers accessible on L2s.
 
@@ -31,26 +31,25 @@ The `Quote` contract deployed to L2 chains uses an UUPS proxy to allow for upgra
 | Contract             | Address                                                                                                                    |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Quote                | [`0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829`](https://optimistic.etherscan.io/address/0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829) |
-| Quote Implementation | [`0xA02ac8C77D4e2b52cA65C4f3C0534036269845b7`](https://optimistic.etherscan.io/address/0xA02ac8C77D4e2b52cA65C4f3C0534036269845b7) |
+| Quote Implementation | [`0x0F18789f6837f99B9B1F176eC1BF3a410fbae764`](https://optimistic.etherscan.io/address/0x0F18789f6837f99B9B1F176eC1BF3a410fbae764) |
 
 #### Base
 
 | Contract             | Address                                                                                                                    |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Quote                | [`0xD68647555e5da198d50866334EEd647cbE3d1556`](https://basescan.org/address/0xD68647555e5da198d50866334EEd647cbE3d1556) |
-| Quote Implementation | [`0x8101F97D399e110067Ff785b783d61545B5f18D2`](https://basescan.org/address/0x8101F97D399e110067Ff785b783d61545B5f18D2) |
+| Quote Implementation | [`0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829`](https://basescan.org/address/0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829) |
 
 #### Arbitrum
 
 | Contract             | Address                                                                                                                    |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Quote                | [`0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829`](https://arbiscan.io/address/0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829) |
-| Quote Implementation | [`0xA02ac8C77D4e2b52cA65C4f3C0534036269845b7`](https://arbiscan.io/address/0xA02ac8C77D4e2b52cA65C4f3C0534036269845b7) |
+| Quote Implementation | [`0x16326c241BC4043C9a08366F5C676ff34D9576d0`](https://arbiscan.io/address/0x16326c241BC4043C9a08366F5C676ff34D9576d0) |
 
 #### Polygon
 
 | Contract             | Address                                                                                                                    |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Quote                | [`0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829`](https://polygonscan.com/address/0x0AC34fe133BdE3A2eF589a18A4E10b6a7d253829) |
-| Quote Implementation | [`0xA02ac8C77D4e2b52cA65C4f3C0534036269845b7`](https://polygonscan.com/address/0xA02ac8C77D4e2b52cA65C4f3C0534036269845b7) |
-
+| Quote Implementation | [`0xAF49c6d8FCbD6183D9cc5527aCF70676902A4b67`](https://polygonscan.com/address/0xAF49c6d8FCbD6183D9cc5527aCF70676902A4b67) |

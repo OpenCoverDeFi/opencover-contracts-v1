@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-pragma solidity 0.8.18;
+pragma solidity 0.8.28;
 
 /// @dev Used for tracking the status of quotes throughout their lifecycle.
 enum QuoteStatus {
@@ -146,6 +146,7 @@ interface IQuoteV1 {
     function assets(uint32 providerId, uint32 assetId) external view returns (Asset memory);
     function quoteSettlements(uint256 quoteId) external view returns (QuoteSettlement memory);
 
+    /// @dev Removed in V1.5.
     function previewQuote(QuoteSubmission calldata quote)
         external
         view
@@ -214,4 +215,27 @@ interface IQuoteV1 {
     error QuoteSoulbound();
 }
 
-interface IQuote is IQuoteV1 {}
+interface IQuoteV15 {
+    // =========================================================================
+    // Functions
+    // =========================================================================
+
+    function quoteIntegrators(uint256 quoteId) external view returns (uint256);
+    function quoteCoveredAddresses(uint256 quoteId) external view returns (address[] memory);
+
+    function submitQuoteV15(
+        QuoteSubmission calldata quote,
+        address[] memory coveredAddresses,
+        uint256 integratorId,
+        address mintTo,
+        uint8 v, bytes32 r, bytes32 s
+    )
+        external
+        payable
+        returns (uint256 quoteId);
+
+    /// @custom:oc-access-control Administrator
+    function setIntegratorQuoteMetadata(uint256 integratorId, address quoteMetadata) external;
+}
+
+interface IQuote is IQuoteV1, IQuoteV15 {}
